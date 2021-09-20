@@ -1,0 +1,10 @@
+***** Sample Databases for SQL Server *****
+
+1. https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/northwind-pubs
+2. https://docs.microsoft.com/en-us/sql/samples/sql-samples-where-are?view=sql-server-ver15
+3. https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver15&tabs=ssms
+4. https://www.sqlskills.com/sql-server-resources/sql-server-demos/
+
+***** ER Diagram/Database Diagram for the Northwind Sample Database *****
+https://documentation.red-gate.com/dms6/data-masker-help/sample-masking-sets-and-databases/an-er-diagram-for-the-northwind-sample-database
+https://www.zentut.com/wp-content/uploads/downloads/2013/06/Northwind-Sample-Database-Diagram.pdf
