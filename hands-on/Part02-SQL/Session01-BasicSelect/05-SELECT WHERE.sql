@@ -106,9 +106,29 @@ SELECT * FROM Orders WHERE Freight >= 100 AND Freight <= 500 AND ShipVia = 1 --5
 
 
 --16. Và ko ship tới London
+SELECT * FROM Orders WHERE Freight >= 100 AND Freight <= 500 AND ShipVia = 1  AND ShipCity <> 'London'      --50
+SELECT * FROM Orders WHERE Freight >= 100 AND Freight <= 500 AND ShipVia = 1  AND NOT(ShipCity = 'London')  --50
+
 
 -- RẤT RẤT CẨN THẬN KHI TRONG MỆNH ĐỀ WHERE LẠI CÓ AND OR TRỘN VỚI NHAU, TA PHẢI XÀI THÊM ()
 -- ĐỂ PHÂN TÁCH THỨ TỰ FILTER... (SS AND OR KHÁC NỮA) AND (SS KHÁC)
+
+
+--17. Liệt kê k/h đến từ Mĩ hoặc Mexico
+SELECT * FROM Customers WHERE Country = 'USA' AND Country = 'Mexico' --0
+SELECT * FROM Customers WHERE Country = 'USA' OR Country = 'Mexico' --18
+
+--18. Liệt kê k/h KO đến từ Mĩ hoặc Mexico
+SELECT * FROM Customers WHERE NOT( Country = 'USA' OR Country = 'Mexico') --73
+
+SELECT * FROM Customers WHERE Country <> 'USA' AND Country != 'Mexico'  --73
+
+--19. Liệt kê các nhân viên sinh ra trong đoạn [1960 1970]
+SELECT * FROM Employees WHERE YEAR(BirthDate) >= 1960 AND YEAR(BirthDate) <= 1970 ORDER BY BirthDate DESC --4
+
+
+
+
 
 
 
