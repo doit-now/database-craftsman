@@ -7,3 +7,4 @@ FPT UNIVERSITY HCMC - © 2021 GIÁO.LÀNG | fb/giao.lang.bis | https://github.co
 2. HẮC NÃO: Thiết kế ERD và DDL lưu trữ thông tin các thành viên trong lớp 12A5 ở trường THPT XYZ. Lớp 12A5 có 48 học sinh, chia làm 4 tổ, mỗi tổ có một tổ trưởng là học sinh có uy tín được các bạn bình bầu cử ra.
    Thông tin cần lưu trữ bao gồm: mã số học sinh, tên, số di động, tên tổ (1, 2, 3, 4), ai là tổ trưởng của học sinh này
 
+Deadline: LMS -> 23:00 25/10/2021 .docx (sql + Conceptual là đủ rồi)
