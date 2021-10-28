@@ -1,0 +1,10 @@
+FPT UNIVERSITY HCMC - © 2021 GIÁO.LÀNG | fb/giao.lang.bis | https://github.com/doit-now/database-craftsman | https://www.youtube.com/channel/UChsPO5CLUjOWfgwjfC2Y-Wg
+
+ĐH FPT HCMC dự định xây dựng trang blog chia sẻ thông tin. Hãy thiết kế ERD và DDL (SQL Server) để lưu trữ các thông tin liên quan như mô tả dưới đây
+(Bạn được quyền bổ sung thêm những giả định)
+
+1. Bài blog gồm thông tin: tựa đề, tóm tắt, nội dung, ngày tạo, người tạo (là member có account trong hệ thống), thuộc chủ đề/lĩnh vực nào (ví dụ Block Chain, IoT,...), thuộc chuyên ngành nào (SE, IA, GD, IB,...), tags, comments, trạng thái (nháp, chờ duyệt, được duyệt & post,...)...
+
+2. Người dùng bao gồm thông tin: login name, password, fullname, email, avatar,...
+
+Deadline: LMS -> 23:00 1/11/2021 .docx (sql + Conceptual là đủ rồi)

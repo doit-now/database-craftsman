@@ -4,6 +4,8 @@ FPT UNIVERSITY HCMC - © 2021 GIÁO.LÀNG | fb/giao.lang.bis | https://github.co
    Mỗi giảng viên có thể tổ chức nhiều seminar/buổi phụ đạo khác nhau và mỗi seminar/buổi phụ đạo chỉ do một giảng viên phụ trách  
    Thông tin lưu trữ bao gồm: mã số giảng viên, tên giảng viên, email, phone, bộ môn (SE, CF, ITS, Incubator), ngày giờ seminar/phụ đạo, loại hình tổ chức (seminar, phụ đạo), chủ đề, tóm tắt nội dung, phòng học (nếu tiến hành offline), online-link (nếu tiến hành online), sĩ số dự kiến
 
+1. ***** NÂNG CAO: NGHĨ THÊM VỀ LOOK-UP TABLE (...TYPE TABLE)
+
 2. HẮC NÃO: Thiết kế ERD và DDL lưu trữ thông tin các thành viên trong lớp 12A5 ở trường THPT XYZ. Lớp 12A5 có 48 học sinh, chia làm 4 tổ, mỗi tổ có một tổ trưởng là học sinh có uy tín được các bạn bình bầu cử ra.
    Thông tin cần lưu trữ bao gồm: mã số học sinh, tên, số di động, tên tổ (1, 2, 3, 4), ai là tổ trưởng của học sinh này
 
