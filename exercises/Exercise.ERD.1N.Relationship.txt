@@ -2,7 +2,7 @@ FPT UNIVERSITY HCMC - © 2021 GIÁO.LÀNG | fb/giao.lang.bis | https://github.co
 
 1. Thiết kế ERD và DDL (SQL Server) để lưu trữ thông tin về các seminar, buổi giảng phụ đạo của các thầy cô bên bộ môn SE. 
    Mỗi giảng viên có thể tổ chức nhiều seminar/buổi phụ đạo khác nhau và mỗi seminar/buổi phụ đạo chỉ do một giảng viên phụ trách  
-   Thông tin lưu trữ bao gồm: mã số giảng viên, tên giảng viên, email, phone, bộ môn (SE, CF, ITS, Incubator), ngày giờ seminar/phụ đạo, loại hình tổ chức (seminar, phụ đạo), chủ đề, tóm tắt nội dung, phòng học (nếu tiến hành offline), online-link (nếu tiến hành online), sĩ số dự kiến
+   Thông tin lưu trữ bao gồm: mã số giảng viên, tên giảng viên, email, phone, bộ môn (SE, CF, ITS, Incubator), ngày giờ seminar/phụ đạo, loại hình tổ chức (seminar, phụ đạo, workshop), chủ đề, tóm tắt nội dung, phòng học (nếu tiến hành offline), online-link (nếu tiến hành online), sĩ số dự kiến
 
 1. ***** NÂNG CAO: NGHĨ THÊM VỀ LOOK-UP TABLE (...TYPE TABLE)
 
