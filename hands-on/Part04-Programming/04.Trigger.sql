@@ -56,7 +56,9 @@ SELECT * FROM Event
 --SQL CÓ THỂ ĐẾM, QUYẾT ĐỊNH ĐẾM XONG LÀM GÌ TIẾP -> LẬP TRÌNH!!! -> TRIGGER CHẶN KO CHO VÀO
 
 DROP TRIGGER TR_CheckInsertionLimitationEvent
+
 GO
+
 CREATE TRIGGER TR_CheckInsertionLimitationEvent ON Event
 FOR INSERT
 AS
@@ -82,11 +84,34 @@ EXEC PR_InsertEvent N'Thổi nến và Tài chính 4.0'
 -- INSERTED CHỨA VALUE MỚI ĐƯA VÀO
 -- DELETED CHỨA VALUE CŨ/BỊ GHI ĐÈ
 
+GO
+
 CREATE TRIGGER TR_CheckInsertionLimitationEvent ON Event
 FOR INSERT
 AS
 BEGIN
-	-- XEM THỬ NGƯỜI TA CHÈN CÁI EVENT GÌ VÀO TABLE???
-	SELECT * FROM INSERTED
-	ROLLBACK
+	--kiểm tra xem trong table Event ko cho vượt quá 5 sự kiện
+	--if số sự kiện > 5 thì rollback!!!
+	--phải đếm số sự kiện đang có!!!
+	--lấy đc số sk ra để if, tức là khai báo biến 
+	--nhớ lệnh count(*) trong SELECT TRẢ VỀ 1 TABLE, HOK TRẢ VỀ 1 BIẾN, TA PHẢI...
+	
+	DECLARE @noEvents int
+	SELECT @noEvents = COUNT(*) FROM Event
+	--PRINT @noEvents
+	IF @noEvents > 5
+	BEGIN
+		PRINT 'To much events. No more 5 events!!!'
+		ROLLBACK
+	END
+	-- SELECT * FROM INSERTED
+	
 END
+-- LIÊN QUAN ĐẾN TABLE, CÓ 2 LOẠI TRIGGER CƠ BẢN:
+-- CHẶN TRƯỚC KHI DỮ LIỆU ĐƯA VÀO TABLE, LÚC NÀY DỮ LIỆU MỚI VÀO INSERTED (BEFORE)
+
+-- CHẶN SAU KHI ĐÃ VÀO INSERTED VÀ ĐỒNG THỜI VÀO LUÔN TABLE RỒI (AFTER)
+
+SELECT * FROM Event
+EXEC PR_InsertEvent N'Làm sao sống sót ở FU.HCM'
+EXEC PR_InsertEvent N'Thổi nến và Tài chính 4.0'
